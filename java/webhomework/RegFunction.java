@@ -21,26 +21,26 @@ public class RegFunction extends Dropdown{
         drive.findElement(By.id("FirstName")).sendKeys("Jaymini");
         drive.findElement(By.id("LastName")).sendKeys("Patel");
         // First way dropdown
-      //   drive.findElement(By.name("DateOfBirthDay")).sendKeys("19");
-     //    drive.findElement(By.name("DateOfBirthMonth")).sendKeys("April");
-      //   drive.findElement(By.name("DateOfBirthYear")).sendKeys("2023");
+         drive.findElement(By.name("DateOfBirthDay")).sendKeys("19");
+         drive.findElement(By.name("DateOfBirthMonth")).sendKeys("April");
+        drive.findElement(By.name("DateOfBirthYear")).sendKeys("2023");
 
         //2 way dropdown
-       WebElement  Day=    drive.findElement(By.name("DateOfBirthDay"));
-       WebElement  Month=  drive.findElement(By.name("DateOfBirthMonth"));
-       WebElement  Year=  drive.findElement(By.name("DateOfBirthYear"));
+      // WebElement  Day=    drive.findElement(By.name("DateOfBirthDay"));
+      // WebElement  Month=  drive.findElement(By.name("DateOfBirthMonth"));
+      // WebElement  Year=  drive.findElement(By.name("DateOfBirthYear"));
        //    Day.sendKeys("19");
          //  Month.sendKeys("April");
         //   Year.sendKeys("1983");
 
         // 3rd way dropdown
 
-       Select select= new Select(Day);
-       select.selectByIndex(19);
-      Select select1 = new Select(Month);
-      select1.selectByVisibleText("May");
-      Select select2 = new Select(Year);
-      select2.selectByValue("1983");
+     //  Select select= new Select(Day);
+     //  select.selectByIndex(19);
+     // Select select1 = new Select(Month);
+     // select1.selectByVisibleText("May");
+    //  Select select2 = new Select(Year);
+    //  select2.selectByValue("1983");
 
 
 // generic method
